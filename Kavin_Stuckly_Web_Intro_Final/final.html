@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">                                <!-- Language:  English  -->
+    <head>
+		<meta charset="utf-8">                      <!-- Meta element indicating character set of utf-8  -->
+		
+        <!--This is your favicon (tabbed icon), fill in the path to the favicon, it is located in the images folder. The file ends with the extension .ico -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon"> 
+        
+        <!--Link to the stylesheet here-->
+		<link rel="stylesheet" href="css/style.css">  <!-- link associating external stylesheet with web page -->
+        
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900,100' rel='stylesheet' type='text/css'>
+		
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600' rel='stylesheet' type='text/css'>
+		
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+        <!-- title the document with your name, this class number, and Final Project-->
+		<title>Kavin Stuckly ITSE-1311-1012 Final Project</title>
+        
+    </head>
+    <body>
+        
+       <script type="text/javascript">			
+           $(document).ready(function(){
+               $('a[href^="#"]').on('click',function (e) {
+                   e.preventDefault();
+
+                   var target = this.hash;
+                   var $target = $(target);
+
+                   $('html, body').stop().animate({
+                       'scrollTop': $target.offset().top
+                   }, 500, 'swing', function () {
+                       window.location.hash = target;
+                   });
+               });
+           });
+        </script>
+		
+        <main>
+            <nav id="top-nav">
+                <h1 class="nav-h1">Welcome to your Final!</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#thumbs-up">Good Job</a></li>
+                    <li><a href="#images">Images</a></li>
+                    <li><a href="#coding">Coding</a></li>
+                    <li><a href="#end">End</a></li>
+                </ul>
+            </nav>
+            <div class="site">
+                <section id="home">
+                    <p>Hello fine student, I hope all is finding you well. You have just embarked upon your final exam for</p>
+                    <h2>Beginning Web Programming - ITSE 1311</h2>
+                    
+                    <div class="bgbutton">
+						<a href="https://mycourses.tstc.edu/mod/assign/view.php?id=841760" target="_blank" title="Moodle">More Info</a>
+					</div>
+                   
+                </section>
+                
+                <section id="more-info">
+                <p>If you completed all of your work this final should not be a challenge.</p>
+                
+                </section>
+					<section id="animated-gif">
+					<img id="thumbs-up" class="center-img" src="images/thumbsup.gif" alt="good job at doing your work" >
+					<img id="arrow" src="images/arrow.png" alt="this is an animated gif" >
+                </section>
+                <section class="break-bar">
+                    <p>In this class we learned about images.</p>
+                
+                </section>
+                <section id="images">
+                    <div class="gallery">
+                        <p><img src="images/float-cat.jpg" alt="a cat that is floating" >
+                        <img src="images/welcome.jpg" alt="welcome to the Internet" >
+                        <img src="images/unicorn.jpg" alt="this is just a cat riding a unicorn" ></p>
+                    </div>
+                </section>
+                
+                <section id="coding">
+                    <p>We also learned about coding.</p>
+                </section>
+				
+                <section id="coding-example">
+                    <h2 id="code-title">We can now efficiently code</h2>
+                   
+                    <p id="code-list">As you worked your way through this class you learned the proper way to code HTML and CSS in the most current syntax. You learned HTML5 and CSS3 and why we use them. You also learned about the basics of modern webdesign and layout.</p>
+                    
+                    <p>If you need a good refresher or would like to read up on HTML check out HTMLDog's website.</p>
+                    <div id="linkbutton">
+						<a href="http://htmldog.com" target="_blank" title="htmldog"><p>Click Here</p></a>
+					</div>
+                </section>
+				
+                <section id="end">
+                    <h3>Hopefully you had a great time learning HTML5/CSS3 and will continue learning.</h3>
+                    <h3>Once everything is working properly, submit to Moodle.</h3>
+                    <p><a href="#top-nav"><img src="images/up.png" alt="return to top"></a></p>
+                </section>
+				
+            </div>
+        
+        
+        </main>
+    </body>
+
+</html>
