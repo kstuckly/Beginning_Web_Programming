@@ -1,2 +1,2 @@
 # Beginning_Web_Programming
-Project I submitted for my TSTC Beginning Web Programming class.
+Project for Beginning Web Programming class at Texas State Technical College.
